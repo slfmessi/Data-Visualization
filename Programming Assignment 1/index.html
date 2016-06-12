@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="visualization.css">
-    <script src="../node_modules/d3/d3.min.js"></script>
-    <script src="visualization.js"></script>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Annual mean Land-Ocean Temperature Index</title>
+  <link rel="stylesheet" href="visualization.css">
+  <!--<link rel="stylesheet" href="../node_modules/dc/dc.min.css">-->
+  <script src="../node_modules/echarts/dist/echarts.min.js"></script>
+</head>
+<body style="text-align:center;">
+  <h1>Annual mean Land-Ocean Temperature Index</h1>
+  <hr />
+  
+  <div id="temperature"></div>
+  
+  <script src="raw/Programming Assignment 1 Data New/ExcelFormattedGISTEMPData2JS.js"></script>
+  <script type="text/javascript" src="visualization.js"></script>
+  <!--<script src="../node_modules/d3/d3.min.js"></script>-->
+  <!--<script src="../node_modules/crossfilter2/crossfilter.min.js"></script>-->
+  <!--<script src="../node_modules/dc/dc.min.js"></script>-->
+  
+  <div id="description">
+    <p>This chart shows annual mean land-ocean temperatures from 1880 to 2014, for global and hemispheres. The Y-axis shows the temperature in degrees celsius while the X-axis shows the year.</p>
+    <p>The global trend seems to be only slightly increasing from 1880-1940, followed by a peak during 1944 and then a more rapid increase from 1965.</p>
+    <p>When it gets into the 21st Century, the temperature in Northern Hemisphere is always higher than that in Southern Hemisphere, which is also growing faster.</p>
+  </div>
+</body>
 </html>
